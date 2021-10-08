@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import NavBar from './Components/NavBar';
+import PhoneBook from './Components/PhoneBook';
+import AllContacts from './Components/AllContacts';
+import AddContact from './Components/AddContact';
+import NotFound from './Components/NotFound';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <NavBar />
+      <Switch>
+      <Route exact path="/" component={PhoneBook} />
+      <Route exact path="/all" component={AllContacts} />
+      <Route exact path="/add" component={AddContact} />
+      <Route component={NotFound} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 

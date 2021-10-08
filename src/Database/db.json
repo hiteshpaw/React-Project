@@ -1,0 +1,11 @@
+{
+    "users" : [
+        {
+            "first": "Hitesh",
+            "last": "Pawar",
+            "email": "hitesh@gmail.com",
+            "phno": "9876543210",
+            "id": 1
+        }
+    ]
+}
