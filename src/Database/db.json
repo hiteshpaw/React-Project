@@ -1,11 +1,11 @@
 {
-    "users" : [
-        {
-            "first": "Hitesh",
-            "last": "Pawar",
-            "email": "hitesh@gmail.com",
-            "phno": "9876543210",
-            "id": 1
-        }
-    ]
+  "users": [
+    {
+      "first": "Hitesh1",
+      "last": "Pawar",
+      "email": "hitesh@gmail.com",
+      "phno": "7418529630",
+      "id": 1
+    }
+  ]
 }

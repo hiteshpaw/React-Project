@@ -17,9 +17,9 @@ const NavBar = () => {
     return (
         <AppBar className={classes.header} position="static">
             <Toolbar>
-                <NavLink to="./" className={classes.tabs} exact>Phone Book</NavLink>
-                <NavLink to="all" className={classes.tabs}>All Contacts</NavLink>
-                <NavLink to="add" className={classes.tabs}>Add Contact</NavLink>
+                <NavLink to="/" className={classes.tabs} exact>Phone Book</NavLink>
+                <NavLink to="/all" className={classes.tabs}>All Contacts</NavLink>
+                <NavLink to="/add" className={classes.tabs}>Add Contact</NavLink>
             </Toolbar>
         </AppBar>
     )
